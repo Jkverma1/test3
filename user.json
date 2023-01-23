@@ -10,7 +10,7 @@
       "hasSubMenu": true,
       "subMenu": [
         {
-          "id": "sub-btn1",
+          "id": false,
           "name": "CPD",
           "hasIcon": true,
           "iconPath": "img/CPD.svg",
@@ -62,7 +62,7 @@
           ]
         },
         {
-          "id": "sub-btn2",
+          "id": false,
           "name": "BD",
           "hasIcon": true,
           "iconPath": "img/BD.svg",
@@ -70,7 +70,7 @@
           "subMenu": []
         },
         {
-          "id": "sub-btn3",
+          "id": false,
           "name": "ISM",
           "hasIcon": true,
           "iconPath": "img/ISM.svg",
@@ -78,7 +78,7 @@
           "subMenu": []
         },
         {
-          "id": "sub-btn4",
+          "id": false,
           "name": "PD",
           "hasIcon": true,
           "iconPath": "img/PD.svg",
@@ -86,7 +86,7 @@
           "subMenu": []
         },
         {
-          "id": "sub-btn5",
+          "id": false,
           "name": "ESD",
           "hasIcon": true,
           "iconPath": "img/ESD.svg",

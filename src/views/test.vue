@@ -1,10 +1,12 @@
 <script>
 import JsonData from "../../user.json";
 var status = false;
+var subStatus1 = false;
 export default {
   data() {
     return {
       Dropdown: status,
+      subDropdown: subStatus1,
       data: JsonData,
     };
   },
@@ -20,17 +22,23 @@ export default {
     </div>
     <div v-if="Dropdown" class="dropdownItems">
       <ul class="dropdownList">
-        <li v-for="subitem in data.sidebar[4].subMenu">
-          <button class="sub-btn sub-dropdown-btn">
-            <span
-              ><img :src="subitem.iconPath" alt="" /> {{ subitem.name }}</span
-            >
-            <i class="fa-solid fa-chevron-down drop-icon"></i>
+        <li v-for="item in data.sidebar[4].subMenu">
+          <button @click="item.id = !item.id" class="sub-btn sub-dropdown-btn">
+            <span><img :src="item.iconPath" alt="" /> {{ item.name }}</span>
+            <i v-if="item.id" class="fa-solid fa-chevron-up drop-icon"> </i>
+            <i v-else class="fa-solid fa-chevron-down drop-icon"> </i>
           </button>
-
-          <ul>
-            <li>hello</li>
-          </ul>
+          <div v-if="item.id" class="dropdownItems">
+            <div v-for="subitem in item.subMenu">
+              <button class="sub-btn sub-dropdown-btn">
+                <span
+                  ><img :src="subitem.iconPath" alt="" />
+                  {{ subitem.name }}</span
+                >
+                <i class="fa-solid fa-chevron-down drop-icon"></i>
+              </button>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
