@@ -17,17 +17,13 @@
           "hasSubMenu": true,
           "subMenu": [
             {
-              "id": "sub-sub-btn1",
-              "arrowid": "sub-sub-arrow1",
-              "dropid": "sub-sub-dropdown1",
+              "id": false,
               "name": "Basics",
               "hasSubMenu": true,
               "subMenu": [{ "id": 1, "name": "sample" }]
             },
             {
-              "id": "sub-sub-btn2",
-              "arrowid": "sub-sub-arrow2",
-              "dropid": "sub-sub-dropdown2",
+              "id": false,
               "name": "Crew Data",
               "hasSubMenu": true,
               "subMenu": [
@@ -43,9 +39,7 @@
               ]
             },
             {
-              "id": "sub-sub-btn3",
-              "arrowid": "sub-sub-arrow3",
-              "dropid": "sub-sub-dropdown3",
+              "id": false,
               "name": "Form for Crew",
               "hasSubMenu": true,
               "subMenu": [
